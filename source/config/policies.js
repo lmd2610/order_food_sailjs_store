@@ -7,9 +7,6 @@
  * For more information on configuring policies, check out:
  * https://sailsjs.com/docs/concepts/policies
  */
-
-const shipper = require("../api/policies/shipper");
-
 module.exports.policies = {
 
   /***************************************************************************
@@ -22,12 +19,8 @@ module.exports.policies = {
   '*': true,
   'swagger': true,
   'swagger/swagger.json': true,
- 
-
   'store/create': 'notAuthStore',
   'store/get-all': 'store',
   'store/get-store-by-id': 'store',
   'store/login': 'notAuthStore',
-
-  
 };
