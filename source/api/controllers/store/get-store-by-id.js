@@ -1,4 +1,3 @@
-const searchFood = require("../food/search-food");
 
 module.exports = {
 
